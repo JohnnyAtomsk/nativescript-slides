@@ -1553,3 +1553,9 @@ body {
 
 .zoomed .reveal .roll span:after {
   visibility: hidden; }
+
+/*********************************************
+ * USER DEFINED STYLES
+ *********************************************/
+.text-small {
+  font-size: 75% !important; }

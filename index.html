@@ -7,7 +7,8 @@
 		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/moon.css">
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,13 +25,133 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h1>Nativescript</h1>
+					<h3>
+						Build amazing iOS and Android apps<br>with technology you already know
+					</h3>
+					<img src="./img/nativescript-logo.png" alt="nativescript logo">
+				</section>
+				<section>
+					<h3>Co je Nativescript?</h3>
+					<ul>
+						<li class="fragment">Umožňuje vyvíjet nativní aplikace prostřednictvím webových technologií</li>
+						<li class="fragment">Vývoj mobilních aplikací je rychlý a intuitivní</li>
+						<li class="fragment">Výsledná aplikace se přibližuje opravdové aplikaci, není to Webview aplikace</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Mnoho způsobů, jak vyvíjet aplikace</h3>
+					<ul>
+						<li class="fragment">XML markup + Typescript (JS)</li>
+						<li class="fragment">HTML angular šablony + Typescript (JS)</li>
+						<li class="fragment">Vue.js + Typescript (JS)</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Začínáme s Nativescriptem</h3>
+					<ul>
+						<li>Požadavky</li>
+						<li>Instalace Nativescriptu</li>
+						<li>Nativescript ekosystém</li>
+						<li>Základy vývoje na Android platformě</li>
+						<li>Nastavení vývojového prostředí</li>
+						<li>Praktická ukázka na webovém IDE</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Požadavky k instalaci</h3>
+					<ul>
+						<li class="fragment">Node.js 6.X +</li>
+						<li class="fragment">Java Development Toolkit 8</li>
+						<li class="fragment">Android SDK 22+</li>
+						<li class="fragment">Android SDK Tools</li>
+						<li class="fragment">Nastavené systémové proměnné ANDROID_HOME + JAVA_HOME</li>
+						<li class="fragment">
+							Volitelné
+							<ul>
+								<li>Android Studio</li>
+								<li>Google repozitář</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Instalace Nativescriptu</h3>
+					<ul>
+						<li class="fragment">Instalace probíhá přes Node Package Manager</li>
+						<li class="fragment">
+							<code>
+								npm install -g nativescript
+							</code>
+						</li>
+						<li class="fragment">Po instalaci ověříme instalaci</li>
+						<li class="fragment">
+							<code>
+								tns doctor
+							</code>
+							<br>
+							<code>
+								No issues were detected.
+							</code>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Android SDK Tools</h3>
+					<div class="fragment">
+						<p>Soubor nástrojů spravující vývojové nástroje pro Android</p>
+					</div>
+					<div class="fragment">
+						<div class="row">
+							<div class="col-md-4 pull-left">
+								<h4>SDK Manager</h4>
+								<ul>
+									<li class="text-small">Spravuje závislosti a nástroje potřebné pro vývoj Android</li>
+								</ul>
+							</div>
+							<div class="col-md-4 pull-left">
+								<h4>AVD Manager</h4>
+								<li class="text-small">Zakládá a spravuje virtuální obrazy Android OS</li>
+								<li class="text-small">Obrazů může být více a simulují různá zařízení</li>
+							</div>
+							<div class="col-md-4 pull-left">
+								<h4>Emulator</h4>
+								<li class="text-small">Spouští virtuální obrazy AVD</li>
+								<li class="text-small">Je nejpohodlnějším způsobem vývoje mobilních app na PC</li>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h3>AVD Emulator</h3>
+					<ul>
+						<li class="fragment">
+							<p>Zkontrolujeme si vytvořené AVD obrazy</p>
+							<code>emulator -list-avds</code>
+						</li>
+						<li class="fragment">
+							<p>Spustíme emulátor s obrazem</p>
+							<code>emulator -memory 768 @avd-name</code>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Start projektu</h3>
+					<p class="fragment">Založíme nový projekt</p>
+					<code class="fragment">tns create my-app-name --template tns-template-hello-world-ng</code>
+					<div class="fragment">
+						<p>Nebo jednodušeji :)</p>
+						<code>tns create my-app-name --ng</code>
+					</div>
+				</section>
 			</div>
 		</div>
 
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
+		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
 		<script>
 			// More info about config & dependencies:
