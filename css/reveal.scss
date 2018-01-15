@@ -1724,6 +1724,30 @@ $controlsArrowAngleActive: 36deg;
 	font-size: 75%!important;
 }
 
+.tal {
+	text-align: left;
+}
+
+.tac {
+	text-align: center;
+}
+
+.tar {
+	text-align: right;
+}
+
+.fragment-segments {
+	padding-right: 10px!important;
+}
+
+.mb-0 {
+	margin-bottom: 0!important;
+}
+
+.no-border {
+	border: 0!important;
+}
+
 .logo {
 	width: 400px;
     height: 400px;
@@ -1747,4 +1771,9 @@ $controlsArrowAngleActive: 36deg;
 	bottom: -72px;
     right: -103px;
     transform: rotate(35deg);
+}
+
+.mobile-header {
+	border: none!important;
+	height: 250px;
 }

@@ -31,6 +31,7 @@
 					<h3>
 						Build amazing iOS and Android apps<br>with technology you already know
 					</h3>
+					<img class="mobile-header" src="./img/header.png" alt="mobile-header">
 				</section>
 				<section>
 					<h3>Co je Nativescript?</h3>
@@ -104,21 +105,21 @@
 					</div>
 					<div class="fragment">
 						<div class="row">
-							<div class="col-md-4 pull-left">
+							<div class="col-md-4">
 								<h4>SDK Manager</h4>
 								<ul>
-									<li class="text-small">Spravuje závislosti a nástroje potřebné pro vývoj Android</li>
+									<li class="text-small tal fragment-segments">Spravuje závislosti a nástroje potřebné pro vývoj Android</li>
 								</ul>
 							</div>
-							<div class="col-md-4 pull-left">
+							<div class="col-md-4">
 								<h4>AVD Manager</h4>
-								<li class="text-small">Zakládá a spravuje virtuální obrazy Android OS</li>
-								<li class="text-small">Obrazů může být více a simulují různá zařízení</li>
+								<li class="text-small tal fragment-segments">Zakládá a spravuje virtuální obrazy Android OS</li>
+								<li class="text-small tal fragment-segments">Obrazů může být více a simulují různá zařízení</li>
 							</div>
-							<div class="col-md-4 pull-left">
+							<div class="col-md-4">
 								<h4>Emulator</h4>
-								<li class="text-small">Spouští virtuální obrazy AVD</li>
-								<li class="text-small">Je nejpohodlnějším způsobem vývoje mobilních app na PC</li>
+								<li class="text-small tal fragment-segments">Spouští virtuální obrazy AVD</li>
+								<li class="text-small tal fragment-segments">Je nejpohodlnějším způsobem vývoje mobilních app na PC</li>
 							</div>
 						</div>
 					</div>
@@ -138,17 +139,19 @@
 				</section>
 				<section>
 					<h3>Start projektu</h3>
-					<p class="fragment">Založíme nový projekt</p>
-					<code class="fragment">tns create my-app-name --template tns-template-hello-world-ng</code>
 					<div class="fragment">
-						<p>Nebo jednodušeji :)</p>
-						<code>tns create my-app-name --ng</code>
+						<p class="text-small mb-0">Založíme nový projekt</p>
+						<code class="text-small">tns create my-app-name --template tns-template-hello-world-ng</code>
 					</div>
 					<div class="fragment">
-						<p>Spuštění projektu</p>
-						<code>emulator -memory 768 @jmeno-obrazu-ke-spusteni</code>
+						<p class="text-small mb-0">Nebo jednodušeji :)</p>
+						<code class="text-small">tns create my-app-name --ng</code>
+					</div>
+					<div class="fragment">
+						<p class="text-small mb-0">Spuštění projektu</p>
+						<code class="text-small">emulator -memory 768 @jmeno-obrazu-ke-spusteni</code>
 						<br>
-						<code>tns run dev</code>
+						<code class="text-small">tns run dev</code>
 					</div>
 				</section>
 				<section>
@@ -202,14 +205,28 @@
 						<li class="text-small">Switch</li>
 						<li class="text-small">...</li>
 					</ul>
-					<p>Více info na https://docs.nativescript.org/ui/components</p>
+					<p>Více info na <a href="https://docs.nativescript.org/ui/components" target="_blank">nativescript marketplace</a></p>
 				</section>
 				<section>
 					<h3>Nativescript pluginy</h3>
-					<p>Pokud narazíte na cokoliv, co Nativescript v základu neumí, tak věřte, že už na to nejspíše někdo napsal plugin.</p>
-					<code>tns plugin add nativescript-social-share</code>
-					<p>Po přebuildování projektu je nutné ještě doplnit závislost pluginu</p>
-					<code>var socialShare = require("nativescript-social-share");</code>
+					<div class="fragment">
+						<p>Pokud narazíte na cokoliv, co Nativescript v základu neumí, tak věřte, že už na to nejspíše někdo napsal plugin.</p>
+						<code>tns plugin add nativescript-social-share</code>
+					</div>
+					<div class="fragment">
+						<p>Po přebuildování projektu je nutné ještě doplnit závislost pluginu</p>
+						<code>var socialShare = require("nativescript-social-share");</code>
+					</div>
+				</section>
+				<section>
+					<h3>Nativescript playground</h3>
+					<p><a href="https://play.nativescript.org" target="_blank">play.nativescript.org</a></p>
+					<p>Po propojení přes QR kód se zpřístupní web IDE s&nbsp;live&nbsp;reloadem ve smartphonu.</p>
+					<p class="fragment">Pojďme se na něj podívat :)</p>
+				</section>
+				<section>
+					<h3>Děkuji za pozornost</h3>
+					<img class="no-border" src="./img/chibi-android.jpg" alt="android goodbye">
 				</section>
 			</div>
 		</div>
