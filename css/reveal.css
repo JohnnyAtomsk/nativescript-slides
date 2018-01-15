@@ -252,8 +252,8 @@ body {
     color: currentColor;
     -webkit-transform: scale(0.9999);
             transform: scale(0.9999);
-    transition: color 0.2s ease, opacity 0.2s ease, -webkit-transform 0.2s ease;
-    transition: color 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
+    transition: color 0.2s ease, opacity 0.2s ease, -webkit-transform 0.2s ease;
+    transition: color 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
     z-index: 2;
     pointer-events: auto;
     font-size: inherit;
@@ -1559,3 +1559,27 @@ body {
  *********************************************/
 .text-small {
   font-size: 75% !important; }
+
+.logo {
+  width: 400px;
+  height: 400px;
+  display: inline-block;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: .4;
+  position: absolute; }
+
+.logo--nativescript {
+  background-image: url(../img/nativescript-logo.png);
+  top: -39px;
+  left: -77px;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg); }
+
+.logo--angular {
+  background-image: url(../img/angular-logo.svg);
+  bottom: -72px;
+  right: -103px;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg); }

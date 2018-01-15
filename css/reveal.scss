@@ -1720,6 +1720,31 @@ $controlsArrowAngleActive: 36deg;
  * USER DEFINED STYLES
  *********************************************/
 
- .text-small {
-	 font-size: 75%!important;
- }
+.text-small {
+	font-size: 75%!important;
+}
+
+.logo {
+	width: 400px;
+    height: 400px;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: .4;
+    position: absolute;
+}
+
+.logo--nativescript {
+	background-image: url(../img/nativescript-logo.png);
+	top: -39px;
+    left: -77px;
+    transform: rotate(-30deg);
+}
+
+.logo--angular {
+	background-image: url(../img/angular-logo.svg);
+	bottom: -72px;
+    right: -103px;
+    transform: rotate(35deg);
+}

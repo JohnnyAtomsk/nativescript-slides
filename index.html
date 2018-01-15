@@ -4,10 +4,10 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Nativescript</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/moon.css">
+		<link rel="stylesheet" href="css/theme/league.css">
 		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
 
 		<!-- Theme used for syntax highlighting of code -->
@@ -23,6 +23,7 @@
 		</script>
 	</head>
 	<body>
+		<div class="logo logo--nativescript">&nbsp;</div>
 		<div class="reveal">
 			<div class="slides">
 				<section>
@@ -30,7 +31,6 @@
 					<h3>
 						Build amazing iOS and Android apps<br>with technology you already know
 					</h3>
-					<img src="./img/nativescript-logo.png" alt="nativescript logo">
 				</section>
 				<section>
 					<h3>Co je Nativescript?</h3>
@@ -144,9 +144,77 @@
 						<p>Nebo jednodušeji :)</p>
 						<code>tns create my-app-name --ng</code>
 					</div>
+					<div class="fragment">
+						<p>Spuštění projektu</p>
+						<code>emulator -memory 768 @jmeno-obrazu-ke-spusteni</code>
+						<br>
+						<code>tns run dev</code>
+					</div>
+				</section>
+				<section>
+					<h3>Adresářová struktura aplikace</h3>
+					<p>Copak se nachází ve složce app</p>
+					<div class="row">
+						<div class="col-md-6">
+							<ul>
+								<li>App_Resources
+									<ul>
+										<li>drawable-hdpi</li>
+										<li>drawable-mdpi</li>
+										<li>...</li>
+										<li>drawable-xxxhdpi</li>
+										<li>...</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<div class="row">
+								<div class="col-md-6">
+									<img src="./img/icon-small.png" alt="small-icon">
+									<p class="text-small">drawable-mdpi</p>
+								</div>
+								<div class="col-md-6">
+									<img src="./img/icon-big.png" alt="big-icon">
+									<p class="text-small">drawable-xxxhdpi</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<p>K čemu slouží složka pages</p>
+					<ul>
+						<li>Do pages ukládáme komponenty, které naše aplikace bude využívat</li>
+						<li>Patří sem css styly (*-common.css i list.android(ios).css</li>
+						<li>Komponenty ovládají typescript soubory</li>
+						<li>NS aplikace se chová jako SPA, jednotlivé pages propojuje router ng-2</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Templates markup</h3>
+					<p>Nativescript s Angular 2 používá vlastní markup značky. Nejvíce připomíná formát XML</p>
+					<ul>
+						<li class="text-small">Button</li>
+						<li class="text-small">Label</li>
+						<li class="text-small">TextField</li>
+						<li class="text-small">SearchBar</li>
+						<li class="text-small">Switch</li>
+						<li class="text-small">...</li>
+					</ul>
+					<p>Více info na https://docs.nativescript.org/ui/components</p>
+				</section>
+				<section>
+					<h3>Nativescript pluginy</h3>
+					<p>Pokud narazíte na cokoliv, co Nativescript v základu neumí, tak věřte, že už na to nejspíše někdo napsal plugin.</p>
+					<code>tns plugin add nativescript-social-share</code>
+					<p>Po přebuildování projektu je nutné ještě doplnit závislost pluginu</p>
+					<code>var socialShare = require("nativescript-social-share");</code>
 				</section>
 			</div>
 		</div>
+
+		<div class="logo logo--angular"></div>
 
 		<script src="bower_components/jquery/dist/jquery.min.js"></script>
 		<script src="lib/js/head.min.js"></script>
